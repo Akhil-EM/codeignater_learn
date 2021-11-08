@@ -19,6 +19,9 @@
       $authStatus = $this -> g_auth ->login_user();
       echo "Authendication Status is ".$authStatus;
     }
+
+
+    
   }
 
 
