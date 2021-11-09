@@ -14,13 +14,17 @@
           <th>User name</th>
           <th>Age</th>
       </tr>
-      <tr>
-          <td>1</td>
-          <td><?= $users["u_name"] ?></td> 
-          <td><?= $users["age"] ?></td> 
-          <!-- short hand usage of php echo -->
-      </tr>
       
+      <?php
+    
+        foreach ($users as $key => $value) {
+            echo "<tr>";
+            echo "<td>".($key+1)."</td>";  
+            echo "<td>".($value["user_name"])."</td>";
+            echo "<td>".($value["age"])."</td>";
+            echo "</tr>";
+        }  
+      ?>               
 
     </table>
 </body>
