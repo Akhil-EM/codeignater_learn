@@ -24,6 +24,6 @@ class Welcome extends CI_Controller {
 	}
 
 	public function iam(){
-		echo  "under my function";
+		echo  "this text is from custom function from an custom controller";
 	}
 }
