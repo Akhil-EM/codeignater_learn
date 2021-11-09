@@ -2,10 +2,16 @@
   class Customer extends CI_Controller{
 
      public function index(){
-       $this -> load -> model("customer_model");
+       //$this -> load -> model("customer_model");
+       
       //  data object
-       $data["users"] = $this -> customer_model -> get_users();
-       $this-> load-> view("customer-view",$data);
+      //  $data["users"] = $this -> customer_model -> get_users();
+      //  $this-> load-> view("customer-view",$data);
+
+      $this -> load -> helper("common_helper");
+      echo number_add(100);
+      
+      
        
      }
 

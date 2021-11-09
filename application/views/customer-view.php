@@ -19,7 +19,7 @@
     
         foreach ($users as $key => $value) {
             echo "<tr>";
-            echo "<td>".($key+1)."</td>";
+            echo "<td>".($key+1)."</td>";  
             echo "<td>".($value["user_name"])."</td>";
             echo "<td>".($value["age"])."</td>";
             echo "</tr>";
